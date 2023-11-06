@@ -32,8 +32,7 @@ Sentry.init({
     // enable Express.js middleware tracing
     new Sentry.Integrations.Express({ app })
   ],
-  tracesSampleRate: 1.0,
-  environment : 'development'
+  tracesSampleRate: 1.0
 })
 
 // The request handler must be the first middleware on the app
