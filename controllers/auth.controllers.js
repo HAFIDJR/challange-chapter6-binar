@@ -41,6 +41,7 @@ module.exports = {
   getAllImage: async (req, res, next) => {
     try {
       let allImage = await prisma.imageGalery.findMany();
+      console.log(kelas);
       res.status(200).json({
         status: true,
         message: "OK",
